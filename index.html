@@ -27,7 +27,7 @@
             <div class="col-span-1 border border-slate-300 pb-12">
                 <div><img src="images/triangle.png" alt="" class="w-2/3 mx-auto mt-4"></div>
                 <div>
-                    <h2 class="text-center font-medium mt-2">Triangle</h2>
+                    <h2 id="text-triangle" class="text-center font-medium mt-2">Triangle</h2>
                     <p class="text-center">Area(A) = 0.5 × b × h</p>
                 </div>
                 <div class="flex w-full mt-2 mb-2 gap-3 justify-center">
@@ -41,7 +41,7 @@
             <div class="col-span-1 border border-slate-300 pb-12">
                 <div class="mt-12"><img src="images/rectangle.png" alt="" class="w-2/3 mx-auto mt-4"></div>
                 <div>
-                    <h2 class="text-center font-medium mt-2">Rectangle</h2>
+                    <h2 id="text-rectangle" class="text-center font-medium mt-2">Rectangle</h2>
                     <p class="text-center">Area(A) = w × l</p>
                 </div>
                 <div class="flex w-full mt-2 mb-2 gap-3 justify-center">
@@ -55,7 +55,7 @@
             <div class="col-span-1 border border-slate-300 pb-12">
                 <div class="mt-12"><img src="images/parallelogram.png" alt="" class="w-2/3 mx-auto mt-4"></div>
                 <div class="pt-4">
-                    <h2 class="text-center font-medium mt-2">Parallelogram</h2>
+                    <h2 id="text-parallelogram" class="text-center font-medium mt-2">Parallelogram</h2>
                     <p class="text-center">Area(A) = b × h</p>
                 </div>
                 <div class="text-center mb-6">
@@ -69,11 +69,12 @@
               </div>
               <!-- ----------------------- -->
             <div class="col-span-1 border border-slate-300 ">
-                <div>
+                <div class="conatiner-list">
                     <h1 class="text-center font-medium text-lg underline">Area Calulation</h1>
-                    <ol id="area-list" class="list-decimal list-inside pl-8">
-                        <li class="font-medium hidden" > </li>
-                      </ol> 
+                    <table id="table">
+                            <tbody id="table-Input">
+                            </tbody>
+                    </table>
                       
               </div>
 
@@ -85,7 +86,7 @@
             <div class="col-span-1 border border-slate-300 pb-12">
                 <div class="mt-12"><img src="images/rhombus.png" alt="" class="w-2/3 mx-auto mt-4"></div>
                 <div class="pt-4">
-                    <h2 class="text-center font-medium mt-2">Rhombus</h2>
+                    <h2 id="text-rhombus" class="text-center font-medium mt-2">Rhombus</h2>
                     <p class="text-center">Area(A) =0.5 × d<sub>1</sub> × d<sub>2</sub></p>
                 </div>
                 <div class="text-center mb-6">
@@ -100,7 +101,7 @@
               <div class="col-span-1 border border-slate-300 pb-12">
                 <div class=""><img src="images/pentagon.png" alt="" class="w-2/3 mx-auto mt-4"></div>
                 <div class="pt-4">
-                    <h2 class="text-center font-medium ">Pentagon</h2>
+                    <h2 id="text-pentagon" class="text-center font-medium ">Pentagon</h2>
                     <p class="text-center">Area(A) = 0.5 × p × b</p>
                 </div>
                 <div class="text-center mb-6">
@@ -115,16 +116,16 @@
               <div class="col-span-1 border border-slate-300 pb-12">
                 <div class="mt-12"><img src="images/ellipse.png" alt="" class="w-2/3 mx-auto mt-4"></div>
                 <div class="pt-4 mt-6">
-                    <h2 class="text-center font-medium mt-2">Ellipse</h2>
+                    <h2 id="text-ellipse" class="text-center font-medium mt-2">Ellipse</h2>
                     <p class="text-center">Area(A) = &#x3C0;×ab</p>
                 </div>
                 <div class="text-center mb-6 mt-2">
-                    <span>b=10 cm</span> ,
-                    <span>h=4 cm</span>
+                    <span>b= <span id="ellips-input1">10</span> cm</span> ,
+                    <span>h= <span id="ellips-input2">4</span> cm</span>
 
                 </div>
-                   <div class="w-64 h-14 mx-auto "> 
-                    <button class="w-full bg-sky-500 text-white rounded-lg text-center p-4">Calculate</button>
+                   <div class="w-64 h-14 mx-auto"> 
+                    <button id="btn-ellips" class="w-full bg-sky-500 text-white rounded-lg text-center p-4">Calculate</button>
                       </div>
               </div>
               
@@ -137,6 +138,6 @@
     <script src="js/parallelogram.js"></script>
     <script src="js/rhombus.js"></script>
     <script src="js/pentagon.js"></script>
-
+    <script src="js/elips.js"></script>
 </body>
 </html>

@@ -1,7 +1,9 @@
 document.getElementById('btn-parallelogram').addEventListener('click', function(){
-    const parallelogramInput1 = getfixInput('input-parallelogram1');
-    const parallelogramInput2 = getfixInput('input-parallelogram2');
-    const parallelogramAreaUpdate = parallelogramInput1*parallelogramInput2;
-    console.log(parallelogramInput1);
-    setOutputFunction('area-list', parallelogramAreaUpdate);
+    console.log('Hello')
+    cont +=1;
+    const parallelogramInput1 = document.getElementById('input-parallelogram1').innerText;
+    const parallelogramInput2 = document.getElementById('input-parallelogram2').innerText;
+    const AreaUpdate = parallelogramInput1*parallelogramInput2;
+    const NameUpdate = document.getElementById('text-parallelogram').innerText;
+    getOutputFunction(cont, NameUpdate,  AreaUpdate)
 })

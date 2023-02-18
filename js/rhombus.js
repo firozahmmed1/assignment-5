@@ -1,6 +1,10 @@
 document.getElementById('btn-rhombus').addEventListener('click', function(){
-    const rhombusInpurt1 = getfixInput('input-rhombus1');
-    const rhombusInpurt2 = getfixInput('input-rhombus2');
+    cont +=1;
+    const rhombusInpurt1 = document.getElementById('input-rhombus1').innerText;
+    const rhombusInpurt2 = document.getElementById('input-rhombus2').innerText;
     const updateRhombusArea = 0.5*rhombusInpurt1*rhombusInpurt2;
-    setOutputFunction('area-list', updateRhombusArea);
+    const rhombusArea =updateRhombusArea.toFixed(2)
+    const AreaUpdate =parseFloat(rhombusArea);
+    const NameUpdate = document.getElementById('text-rhombus').innerText;
+    getOutputFunction(cont, NameUpdate,  AreaUpdate)
 })
