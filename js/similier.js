@@ -5,6 +5,7 @@ function getInputField (isInput){
     if( isNaN(inputFieldvalue) || inputFieldvalue<0 ){
      alert('Please type a positive number');
     }
+    inputField.value='';
     return inputFieldvalue;
  }
   
@@ -14,3 +15,12 @@ function getInputField (isInput){
       li.innerText = outputValue;
       OutputFunction.appendChild(li);
  }
+
+ function getfixInput(isFixed){
+     const fixInput = document.getElementById(isFixed);
+     const fixInputString = fixInput.innerText;
+     const fixInputPreviousUpadte = parseFloat(fixInputString);
+     return fixInputPreviousUpadte;
+ }
+
+//  setOutputFunction('area-list', rectangleUpadteArea);
