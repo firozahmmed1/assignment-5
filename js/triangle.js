@@ -13,4 +13,8 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
   
 });
 
+document.getElementById('btn-blog').addEventListener('click', function(){
+    window.location.href = "blog.html";
+})
+
 

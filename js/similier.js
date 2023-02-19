@@ -21,3 +21,4 @@ function getInputField (isInput){
     `;
     Action.appendChild(tr);
 }
+
